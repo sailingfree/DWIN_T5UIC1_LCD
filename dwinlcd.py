@@ -2214,7 +2214,7 @@ class DWIN_LCD:
 		update = self.pd.update_variable()
 		if self.last_status != self.pd.status:
 			self.last_status = self.pd.status
-			print(self.pd.status)
+			#print(self.pd.status)
 			if self.pd.status == 'printing':
 				self.Goto_PrintProcess()
 			elif self.pd.status in ['operational', 'complete', 'standby', 'cancelled']:
