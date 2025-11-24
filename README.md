@@ -1,6 +1,24 @@
 # DWIN_T5UIC1_LCD
 
-## Python class for the Ender 3 V2 LCD runing klipper3d with Moonraker 
+## Python class for the Ender 3 V2 LCD runing klipper3d with octoprint
+
+## UPDATE
+
+Based on the excellent work of odwdinc and others this is a re-work so it can be used with newer versions of octoprint.
+The current version I'm using is 1.11.4 and the REST API looks quite different to that used in the original.
+
+If you have authorization enabled in octoprint yiu will need to do the following:
+
+1 get an API token from the Octoprint UI.
+See https://docs.octoprint.org/en/dev/api/general.html
+
+2 Copy that into a tect file in the DWIN_T5UICI_LCD folder named apikey.txt
+
+3. Run the tool as usual. It will indicate whether the API key has found and is valid.
+
+## NOTES
+Several things still do not work, such as after starting a print the screen goes back to the home page.
+This is still a work in progress, sorry!
 
 https://www.klipper3d.org
 
