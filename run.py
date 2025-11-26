@@ -9,7 +9,7 @@ LCD_COM_Port = '/dev/ttyAMA0'
 
 # Read the api key from a local file named apikey.txt
 try:
-        f = open("apikey.txt")
+        f = open("/home/pi//DWIN_T5UIC1_LCD/apikey.txt")
         API_Key = (f.read()).strip()
 except:
        sys.exit("Cannot read the api key please make sure the file exists")
